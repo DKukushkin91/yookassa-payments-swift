@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "PaymentMethod.YooMoney.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

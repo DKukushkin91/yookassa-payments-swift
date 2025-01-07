@@ -1,0 +1,191 @@
+PODS:
+  - AppMetricaAdSupport (5.8.2):
+    - AppMetricaCore (= 5.8.2)
+    - AppMetricaCoreExtension (= 5.8.2)
+  - AppMetricaAnalytics (5.8.2):
+    - AppMetricaAdSupport (= 5.8.2)
+    - AppMetricaCore (= 5.8.2)
+    - AppMetricaCrashes (= 5.8.2)
+    - AppMetricaWebKit (= 5.8.2)
+  - AppMetricaCore (5.8.2):
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaEncodingUtils (= 5.8.2)
+    - AppMetricaFMDB (= 5.8.2)
+    - AppMetricaHostState (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+    - AppMetricaNetwork (= 5.8.2)
+    - AppMetricaPlatform (= 5.8.2)
+    - AppMetricaProtobuf (= 5.8.2)
+    - AppMetricaProtobufUtils (= 5.8.2)
+    - AppMetricaStorageUtils (= 5.8.2)
+  - AppMetricaCoreExtension (5.8.2):
+    - AppMetricaCore (= 5.8.2)
+    - AppMetricaStorageUtils (= 5.8.2)
+  - AppMetricaCoreUtils (5.8.2):
+    - AppMetricaLog (= 5.8.2)
+  - AppMetricaCrashes (5.8.2):
+    - AppMetricaCore (= 5.8.2)
+    - AppMetricaCoreExtension (= 5.8.2)
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaEncodingUtils (= 5.8.2)
+    - AppMetricaHostState (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+    - AppMetricaPlatform (= 5.8.2)
+    - AppMetricaProtobufUtils (= 5.8.2)
+    - AppMetricaStorageUtils (= 5.8.2)
+    - KSCrash/Recording (< 2.1.0, >= 2.0.0-rc.1)
+  - AppMetricaEncodingUtils (5.8.2):
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+    - AppMetricaPlatform (= 5.8.2)
+  - AppMetricaFMDB (5.8.2)
+  - AppMetricaHostState (5.8.2):
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+  - AppMetricaLog (5.8.2)
+  - AppMetricaNetwork (5.8.2):
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+    - AppMetricaPlatform (= 5.8.2)
+  - AppMetricaPlatform (5.8.2):
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+  - AppMetricaProtobuf (5.8.2)
+  - AppMetricaProtobufUtils (5.8.2):
+    - AppMetricaProtobuf (= 5.8.2)
+  - AppMetricaStorageUtils (5.8.2):
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+  - AppMetricaWebKit (5.8.2):
+    - AppMetricaCore (= 5.8.2)
+    - AppMetricaCoreUtils (= 5.8.2)
+    - AppMetricaLog (= 5.8.2)
+  - ClickstreamSDK (1.5.0)
+  - FMobileSdk (2.0.0-1231)
+  - FunctionalSwift (2.3.2)
+  - KSCrash/Core (2.0.0-rc.8)
+  - KSCrash/Recording (2.0.0-rc.8):
+    - KSCrash/RecordingCore
+  - KSCrash/RecordingCore (2.0.0-rc.8):
+    - KSCrash/Core
+  - MoneyAuth (11.2.3):
+    - TwoFA (~> 1.3)
+    - YooMoneySessionProfiler
+    - YooMoneyUserAuthCenterApi
+  - SPaySDK (2.3.1):
+    - ClickstreamSDK (~> 1.5.0)
+  - SwiftLint (0.49.1)
+  - TwoFA (1.3.3):
+    - YooMoneyAuthenticatorApi (~> 2.0)
+    - YooMoneyCoreApi (~> 3.0)
+    - YooMoneyUI (~> 7.7)
+  - YooKassaPayments (7.3.0):
+    - AppMetricaAnalytics (~> 5.8)
+    - FMobileSdk (~> 2.0.0-1231)
+    - MoneyAuth (~> 11.2)
+    - SPaySDK (~> 2.3.0)
+    - YooKassaPaymentsApi (~> 2.24)
+    - YooKassaWalletApi (~> 2.7)
+  - YooKassaPaymentsApi (2.24.1):
+    - FunctionalSwift
+    - YooMoneyCoreApi (~> 3.1.1)
+  - YooKassaWalletApi (2.7.1):
+    - FunctionalSwift
+    - YooMoneyCoreApi
+  - YooMoneyAuthenticatorApi (2.0.1):
+    - FunctionalSwift (~> 2.0)
+    - YooMoneyCoreApi (~> 3.0)
+  - YooMoneyCoreApi (3.1.1):
+    - FunctionalSwift (~> 2.0)
+  - YooMoneySessionProfiler (5.3.2):
+    - FMobileSdk
+  - YooMoneyUI (7.12.3):
+    - FunctionalSwift
+  - YooMoneyUserAuthCenterApi (10.2.2):
+    - FunctionalSwift (~> 2.0)
+    - YooMoneyCoreApi (~> 3.0)
+  - YooMoneyVision (2.0.2)
+
+DEPENDENCIES:
+  - SwiftLint (~> 0.49.1)
+  - YooKassaPayments (from `./`)
+  - YooMoneyVision (~> 2.0.0)
+
+SPEC REPOS:
+  https://git.yoomoney.ru/scm/sdk/cocoa-pod-specs.git:
+    - FMobileSdk
+    - FunctionalSwift
+    - MoneyAuth
+    - TwoFA
+    - YooKassaPaymentsApi
+    - YooKassaWalletApi
+    - YooMoneyAuthenticatorApi
+    - YooMoneyCoreApi
+    - YooMoneySessionProfiler
+    - YooMoneyUI
+    - YooMoneyUserAuthCenterApi
+    - YooMoneyVision
+  https://github.com/CocoaPods/Specs.git:
+    - AppMetricaAdSupport
+    - AppMetricaAnalytics
+    - AppMetricaCore
+    - AppMetricaCoreExtension
+    - AppMetricaCoreUtils
+    - AppMetricaCrashes
+    - AppMetricaEncodingUtils
+    - AppMetricaFMDB
+    - AppMetricaHostState
+    - AppMetricaLog
+    - AppMetricaNetwork
+    - AppMetricaPlatform
+    - AppMetricaProtobuf
+    - AppMetricaProtobufUtils
+    - AppMetricaStorageUtils
+    - AppMetricaWebKit
+    - ClickstreamSDK
+    - KSCrash
+    - SPaySDK
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  YooKassaPayments:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  AppMetricaAdSupport: 6fd6e54fc9d330f152e97c38cd92775071e353b8
+  AppMetricaAnalytics: 93374c9f748f85f4d62f2ed2714eeb058eee1d33
+  AppMetricaCore: bf95c826ec74260b8c81cca9fc21efb8aea52a70
+  AppMetricaCoreExtension: 9cf386437072bb2bb578eb0b7654b3e3f53f3abf
+  AppMetricaCoreUtils: e272b7ae0d4da73e178cc9d7cf391ce67c713d61
+  AppMetricaCrashes: 2a47cc39a691f9751c2a73e20ce5e06f5a9cdc64
+  AppMetricaEncodingUtils: ee11733ecad85bf10d513920ef091bbc0ae5f2c7
+  AppMetricaFMDB: 44ffa4aa173513c04af2a1fbf6dfc180f266872a
+  AppMetricaHostState: c6a10727120cdd4d7eaaabf57f9e562ec9cd6b0f
+  AppMetricaLog: 49eb3d5ef7d4288a388cc34eaa53cbcd42241b8a
+  AppMetricaNetwork: f29d5bedc1abb6dff4be1f89422e5403dcda7dee
+  AppMetricaPlatform: f3423676add2e9a61b6b67f2692f385b62bf87a8
+  AppMetricaProtobuf: d895f7478c9e90ac3a50bd2f2ae8bd022205dbd1
+  AppMetricaProtobufUtils: 2e4134f486620a27306940347265c824784c906c
+  AppMetricaStorageUtils: d4b1470acba258fe9a07d9860defdeb93096b89b
+  AppMetricaWebKit: 900bc1bdc8c35d0605a3dfe9ba8b8b69a77f73b8
+  ClickstreamSDK: 591cbf0c2f96bcaba6a36365a94a19f4463a1ae5
+  FMobileSdk: a7b555198f03785af1a6064db57545c49694c1cf
+  FunctionalSwift: 435e596635bfa7e3852661bda39330ff1da6855f
+  KSCrash: 946472c56073afdaf6bae37d886e3f562027075c
+  MoneyAuth: 63d3fbea3f6ac810a6f4362bdbf338046c8b3a4e
+  SPaySDK: 83fe00cc086260682d35ca03b38f6856f94cb583
+  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+  TwoFA: 1712ee58b3d916c7ac8689f98e74e22fbabea6d7
+  YooKassaPayments: 0dbe01b496621ff04d2614ee69335dd02b7afb94
+  YooKassaPaymentsApi: 9475afaa4d66ed00f9553d5b8ab9dfc9f417a394
+  YooKassaWalletApi: 618c2c44e39d0e218e293ab4a2fe271143155337
+  YooMoneyAuthenticatorApi: d1fea62ea1a06c7d3908c10407c4fe2d5c234e5a
+  YooMoneyCoreApi: f53a22898878aab2f07449351a8a08f4918a6100
+  YooMoneySessionProfiler: 8f474adaa10770fa9818ec89196c40d2b333c602
+  YooMoneyUI: e13949c1cc1412a21d848029b7b156a15d9bd59d
+  YooMoneyUserAuthCenterApi: f3792e40af78ab76e3e82fff3d23a005a604a63c
+  YooMoneyVision: 42703ed279bfe26a6f831bcade8db8eb4dd85308
+
+PODFILE CHECKSUM: 5736c595f4791bb4a9b0b98c330c2dbc3e1603e7
+
+COCOAPODS: 1.16.2

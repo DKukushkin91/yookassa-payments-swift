@@ -1,0 +1,5 @@
+﻿/* Название приложения */
+"CFBundleDisplayName" = "mSDK";
+
+"NSPhotoLibraryUsageDescription" = "Scanning card number with camera";
+
