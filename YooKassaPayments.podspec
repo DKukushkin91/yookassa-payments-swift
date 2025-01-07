@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
 
   s.ios.source_files  = 'YooKassaPayments/**/*.{h,swift}', 'YooKassaPayments/*.{h,swift}'
-  s.ios.resource_bundles = {"YooKassaPayments", [
+  s.ios.resource_bundle = {"YooKassaPayments", [
     'YooKassaPayments/Public/Resources/*.xcassets',
     'YooKassaPayments/Public/Resources/**/*.plist',
     'YooKassaPayments/Public/Resources/**/*.json',
