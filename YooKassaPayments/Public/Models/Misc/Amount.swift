@@ -1,3 +1,5 @@
+import Foundation
+
 /// Amount of payment.
 public struct Amount {
 
