@@ -1,7 +1,7 @@
 import Foundation
 
 /// Amount of payment.
-public struct Amount {
+public class Amount {
 
     /// Amount of payment.
     public let value: Decimal
