@@ -297,7 +297,7 @@ private func makeCharge(
     charge: Amount, fee: Fee?
 ) -> Amount {
     guard let fee = fee, let service = fee.service else { return charge }
-    return Amount(value: charge.value + service.charge.value, currency: charge.currency)
+    return Amount.init(value: charge.value + service.charge.value, currency: charge.currency)
 }
 
 private func makeLinkedCards(

@@ -78,7 +78,7 @@ struct TestModeSettingsForm: Codable {
         TestModeSettings(
             paymentAuthorizationPassed: paymentAuthorizationPassed,
             cardsCount: cardsCount,
-            charge: Amount(value: charge.amount, currency: charge.currency),
+            charge: Amount.init(value: charge.amount, currency: charge.currency),
             enablePaymentError: enablePaymentError
         )
     }
@@ -257,7 +257,7 @@ extension TokenizationForm {
             shopName: shopName,
             shopId: shopId,
             purchaseDescription: purchaseDescription,
-            amount: Amount(value: amount.amount, currency: amount.currency),
+            amount: Amount.init(value: amount.amount, currency: amount.currency),
             gatewayId: gatewayId,
             tokenizationSettings: TokenizationSettings(paymentMethodTypes: tokenizationSettings.paymentMethodTypes),
             testModeSettings: testModeSettings.enabled ? testModeSettings.settingsValue : nil,
@@ -328,7 +328,7 @@ struct CardRepeatForm: Codable {
             purchaseDescription: NSLocalizedString("root.description", comment: ""),
             paymentMethodId: "2cc855c9-0029-5000-8000-099acd97cfa5",
             amount: AmountForm(amount: 5.0, currency: .rub),
-            testModeSettings: TestModeSettingsForm(enabled: false, paymentAuthorizationPassed: false, cardsCount: 3, charge: AmountForm(amount: 5.0, currency: .rub), enablePaymentError: false), 
+            testModeSettings: TestModeSettingsForm(enabled: false, paymentAuthorizationPassed: false, cardsCount: 3, charge: AmountForm(amount: 5.0, currency: .rub), enablePaymentError: false),
             returnUrl: "",
             isLoggingEnabled: true,
             customizationSettings: CustomizationSettingsForm(),
@@ -343,7 +343,7 @@ struct CardRepeatForm: Codable {
             shopName: shopName,
             purchaseDescription: purchaseDescription,
             paymentMethodId: paymentMethodId,
-            amount: Amount(value: amount.amount, currency: amount.currency),
+            amount: Amount.init(value: amount.amount, currency: amount.currency),
             testModeSettings: testModeSettings.enabled ? testModeSettings.settingsValue : nil,
             returnUrl: returnUrl.isEmpty ? nil : returnUrl,
             isLoggingEnabled: isLoggingEnabled,

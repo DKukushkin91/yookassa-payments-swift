@@ -23,7 +23,7 @@ enum MonetaryAmountFactory {
         _ amount: MonetaryAmount
     ) -> Amount {
         let currency = Currency(rawValue: amount.currency) ?? Currency.custom(amount.currency)
-        return Amount(
+        return Amount.init(
             value: amount.value,
             currency: currency
         )
@@ -33,7 +33,7 @@ enum MonetaryAmountFactory {
         _ amount: YooKassaPaymentsApi.MonetaryAmount
     ) -> Amount {
         let currency = Currency(rawValue: amount.currency) ?? Currency.custom(amount.currency)
-        return Amount(
+        return Amount.init(
             value: amount.value,
             currency: currency
         )
